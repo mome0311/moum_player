@@ -1,5 +1,7 @@
 # moum player
 
+**🏠 ホーム** ｜ [▶️ 基本の使い方](docs/basics.md) ｜ [🎵 曲の管理](docs/library.md) ｜ [💾 書き出しと設定](docs/export-settings.md) ｜ [❓ 困ったとき](docs/faq.md)
+
 **手持ちの曲をきれいに並べて、すぐ再生できる音楽プレイヤー（Windows 用）。**
 
 ![moum player のメイン画面](docs/images/main.png)
@@ -8,7 +10,7 @@
 - 曲の情報（タグ）の編集、iTunes ライブラリの取り込み
 - DJ ソフト [moum deck](https://github.com/mome0311/moum_deck) と一緒に使うと、さらに便利（単体でも使えます）
 
-**[⬇ 最新のインストーラー（Releases）](../../releases/latest)**　・　**[📖 詳しい使い方](docs/guide.md)**
+**[⬇ 最新のインストーラー（Releases）](../../releases/latest)**
 
 ## moum player ならではの機能
 
@@ -40,6 +42,6 @@ moum deck 用の USB、この PC の moum deck、rekordbox XML、Traktor NML へ
 
 対応形式は FLAC / MP3 / WAV / AIFF です。M4A（AAC / ALAC）だけ ffmpeg が必要です。
 
-取り込み・タグの書き込み・書き出し・設定・トラブル対処は、[詳しい使い方](docs/guide.md) にまとめています。
+取り込み・タグの書き込み・書き出し・設定・トラブル対処は、ページ上部のリンクから開けます。
 
 <sub>スクリーンショットは v1.0.1。写っている曲は撮影用のサンプルです。</sub>
