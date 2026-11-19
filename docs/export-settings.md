@@ -1,59 +1,59 @@
 # moum player — 書き出しと設定
 
-[🏠 ホーム](../README.md) ｜ [▶️ 基本の使い方](basics.md) ｜ [🎵 曲の管理](library.md) ｜ **💾 書き出しと設定** ｜ [❓ 困ったとき](faq.md)
+[🏠 ホーム](../README.md) ｜ [▶️ 基本の使い方](basics.md) ｜ [🎵 曲の管理](library.md) ｜ [💿 CD・変換・オンライン](cd-convert-online.md) ｜ **💾 書き出しと設定** ｜ [❓ 困ったとき](faq.md)
 
 ---
 
-## 10. 書き出し（Export）
+## 12. 書き出し
 
-**File › Export library…**（Ctrl E）を開きます。上の **FORMAT** で、書き出し先の種類を選びます。
+**ファイル › ライブラリを書き出す…**（Ctrl E）を開きます。上の「形式」で、書き出し先の種類を選びます（「moum deck USB」「この PC の moum deck」「rekordbox XML」「Traktor NML」）。
 
-### 10-1. moum deck USB
+### 12-1. moum deck USB
 
-USB メモリや外付けドライブに、曲・カバー画像・moum deck 用のライブラリ（ドライブの一番上の `.moum_deck` フォルダー）を書き出します。
+USB メモリや外付けドライブに、曲・ジャケット・moum deck 用のライブラリ（ドライブの一番上の `.moum_deck` フォルダー）を書き出します。
 moum deck は、USB のライブラリを、**ドライブの一番上のフォルダー**からだけ探します。
 
 | 項目 | 内容 |
 |---|---|
-| DESTINATION | 書き出し先のドライブ、または **Choose folder…** で選ぶフォルダー |
-| PURPOSE | **DJ USB**（曲・カバー・プレイリスト・解析を moum deck の並びで）/ **Backup**（ライブラリのデータベースと設定も含めて、そのままコピー）/ **Another PC**（フォルダーの並びと、moum player のデータベースと設定のコピー。中のパスは元の PC のもので、書き換えません） |
-| INCLUDE | Music files / Artwork / Playlists / moum deck analysis / Library edits / Library database & settings |
-| SONGS | Whole library / Playlists only / Sources / Selected songs |
-| SYNC | **Add and update**（何も消さない）/ **Mirror**（以前この書き出しで入れて、今は選ばれていない曲を消す。ほかのファイルは残る） |
-| FOLDERS | moum deck layout / Same as library / Artist › Album |
+| 書き出し先 | 書き出し先のドライブ、または **フォルダーを選択…** で選ぶフォルダー |
+| 用途 | **DJ 用 USB**（曲・ジャケット・プレイリスト・解析値を moum deck の並びで）/ **バックアップ**（ライブラリのデータベースと設定も含めて、そのままコピー）/ **別の PC**（フォルダーの並びと、moum player のデータベースと設定のコピー。中のパスは元の PC のもので、書き換えません） |
+| 含める項目 | 音楽ファイル / ジャケット / プレイリスト / moum deck の解析値 / ライブラリの編集内容 / ライブラリのデータベースと設定 |
+| 曲 | ライブラリ全体 / プレイリストのみ / 購入元 / 選択中 · N |
+| 同期 | **追加と更新**（何も消さない）/ **ミラー**（以前この書き出しで入れて、今は選ばれていない曲を消す。ほかのファイルは残る） |
+| フォルダー | moum deck の並び / ライブラリと同じ / アーティスト › アルバム |
 
-- 右の SUMMARY に、New（新規）/ Changed（変更）/ Unchanged（変更なし）の数、コピーするサイズ、空き容量が出ます。
+- 右の「概要」に、新規 / 変更あり / 変更なし の数、コピーするサイズ、空き容量が出ます。
   **新しい・変わったファイルだけ**をコピーするので、何度でも同じドライブに書き出し直せます。
 - 空き容量が足りないときや、ドライブの一番上ではないフォルダーを選んだときは、警告が出ます（その場合 moum deck は USB のライブラリを見つけません）。
-- 書き出し中も、再生は続けられます。**ドライブを抜かないでください。** Cancel export で止められます。
+- 書き出し中も、再生は続けられます。**ドライブを抜かないでください。** 「書き出しを中止」で止められます。
 - exFAT のドライブは、Windows と Mac の moum deck で使えます。
 
-### 10-2. moum deck on this PC
+### 12-2. この PC の moum deck
 
 moum player で編集した内容を、**この PC の moum deck のライブラリ**に書き込みます。moum deck で、同じ情報が見えるようになります。
 
 1. 先に **moum deck を終了**します。起動中は、何も書き込まれません。
-2. **FORMAT** で「moum deck on this PC」を選びます。変更される曲と項目の**プレビュー**が出ます。
-3. 確認して実行します。**書き込む前に、データベースのバックアップ**（zip ファイル）を、moum deck のデータベースと同じ場所に作ります（新しい 5 つを残します）。
+2. 「形式」で「この PC の moum deck」を選びます。「変更内容」に、変更される曲と項目の**プレビュー**が出ます。
+3. 確認して **moum deck を更新…** を押し、続けて **moum deck に書き込む** を押します。**書き込む前に、データベースのバックアップ**（zip ファイル）を、moum deck のデータベースと同じ場所に作ります（新しい 5つを残します）。
 4. 次に moum deck を起動すると、新しい値が読まれます。
 
 - 書き込む項目：タイトル・アーティスト・アルバム・アルバムアーティスト・ジャンル・年・トラック番号・レーベル・カタログ番号・追加日。
   （古い版の moum deck では、アルバムアーティスト・レーベル・カタログ番号などが書き込めません。）
 - **BPM・キー・キュー・ループ・グリッド・プレイリストは変わりません。**
-- moum player で、ファイルを移動（再リンクや整理）した曲は、moum deck でも新しいパスに付け替えられます。キューやプレイリストは、そのまま残ります。
+- moum player で、ファイルを移動（再リンク、整理、形式の変換）した曲は、moum deck でも新しいパスに付け替えられます。キューやプレイリストは、そのまま残ります。
   移動先に、すでに別の曲がある場合は、付け替えず、一覧に出ます。
-- 書き込みは、1 回の処理で行います。途中で止まったときは、変更されません。
+- 書き込みは、1回の処理で行います。途中で止まったときは、変更されません。
 - 戻したいときは、作られたバックアップを使います。
 
-### 10-3. rekordbox XML
+### 12-3. rekordbox XML
 
-rekordbox 用の XML ファイルを 1 つ書き出します。曲のファイルはコピーせず、今の場所を指します。キューとループは、moum deck の解析から作られます。
+rekordbox 用の XML ファイルを 1つ書き出します。曲のファイルはコピーせず、今の場所を指します。キューとループは、moum deck の解析から作られます。
 
-- rekordbox 側：Preferences › Advanced › Database › rekordbox xml でこのファイルを選び、ツリーの「rekordbox xml」から、曲やプレイリストを取り込みます。
+- rekordbox 側：環境設定 › 詳細 › データベース › rekordbox xml でこのファイルを選び、ツリーの「rekordbox xml」から、曲やプレイリストを取り込みます。
 
-### 10-4. Traktor NML
+### 12-4. Traktor NML
 
-Traktor 用のコレクションファイル（`.nml`）を 1 つ書き出します。曲のファイルはコピーしません。
+Traktor 用のコレクションファイル（`.nml`）を 1つ書き出します。曲のファイルはコピーしません。
 
 - Traktor 側：Browser Tree の「Track Collection」を右クリック › Import Another Collection で、このファイルを選びます。Traktor 自身のコレクションは、置き換わりません。
 
@@ -62,31 +62,27 @@ rekordbox XML と Traktor NML では、書き出し先のファイルを選び�
 
 ---
 
-## 11. Settings（設定）
+## 13. 設定
 
-**File › Settings…**（Ctrl ,）で、別ウィンドウの設定が開きます。上のタブで切り替えます。
-**変更はすぐ反映・保存されます**（OK ボタンはありません）。閉じるのは Close か Esc です。
-
-| General タブ | moum deck タブ |
-|---|---|
-| ![Settings の General タブ](images/settings.png) | ![Settings の moum deck タブ](images/settings_deck.png) |
+**ファイル › 設定…**（Ctrl ,）で、別ウィンドウの設定が開きます。上のタブで切り替えます。
+**変更はすぐ反映・保存されます**（OK ボタンはありません）。閉じるのは「閉じる」か Esc です。
 
 | タブ | 内容 |
 |---|---|
-| General | Language / Theme（Light・Dark）/ Display size / Show splash screen。（Open at sign-in、Close button の「Keep playing in tray」は、まだ使えません） |
-| Playback | Output device / Gapless playback / Resume where I left off。（Exclusive mode、Crossfade、Volume levelling は、まだ使えません） |
-| Library | Library folder（Change… / Open）/ Folder layout / Add music（Add folder… / Add files…）/ iTunes / Music library（Import…）/ Songs outside the library folder / moum deck folders（参考表示）/ Rescan now / File types / ffmpeg（Install… / Locate…）。（Watch folders は、まだ使えません） |
-| moum deck | moum deck のデータベースの状態（Locate deck DB / Refresh now）/ Show BPM and key / Estimate missing BPM / Show cue points / Show deck playlists / Refresh when moum deck closes / Add imported folders to moum deck（Retry now） |
-| Tags | Garbled tags / Artist names / Organise files / Duplicates / Missing files / Check the library regularly（Check now）/ Missing tags / Write changes into the music files / Write tags to files |
-| Online | Look up covers and tags online / Covers。（Check for updates は、まだ使えません） |
-| Export | Export now…。（そのほかの項目は準備中です） |
-| Advanced | Keyboard（ショートカットの一覧）/ Licences（Third-party notices） |
+| 一般 | 言語 / テーマ（ライト・ダーク）/ 表示サイズ / 起動画面を表示。（サインイン時に開く、閉じるボタンの「トレイで再生を続ける」は、まだ使えません） |
+| 再生 | 出力デバイス / ギャップレス再生 / 前回の続きから再生。（排他モード、クロスフェード、音量の平準化は、まだ使えません） |
+| ライブラリ | ライブラリフォルダー（変更… / 開く）/ フォルダー構成 / 曲を追加（フォルダーを追加… / ファイルを追加…）/ iTunes / ミュージックのライブラリ（取り込む…）/ ライブラリフォルダー外の曲 / moum deck のフォルダー（参考表示）/ ライブラリを再スキャン（今すぐ再スキャン）/ ファイル形式 / 購入元（§4-9）/ 変換（変換: 既定の形式 / 変換: 元のファイルをバックアップ / バックアップフォルダー。§7）/ CD 取り込み（CD を取り込む… / CD 取り込みの形式 / ビットレート / セキュアモード / 取り込み後に取り出す / AccurateRip で照合する / ドライブの読み取りオフセット。§6）/ ffmpeg（インストール… / 場所を指定…）。（フォルダーを監視は、まだ使えません） |
+| moum deck | moum deck のデータベースの状態（場所を指定… / 今すぐ更新）/ BPM とキーを表示 / 足りない BPM を推定 / キューポイントを表示 / deck のプレイリストを表示 / moum deck を閉じたら更新 / 取り込んだフォルダーを moum deck に追加（今すぐ再試行） |
+| タグ | 文字化けしたタグ / アーティスト名 / ファイルを整理 / 重複 / 見つからないファイル / ライブラリを定期的に確認（今すぐ確認）/ 足りないタグ / 変更内容を音楽ファイルに書き込む / タグをファイルに書き込む |
+| オンライン | ジャケットとタグをオンラインで検索 / 洋楽のタイトルを原語で取り込む / アルバム情報 / ジャケット / アップデートを確認。（アップデートを確認は、まだ使えません） |
+| 書き出し | 今すぐ書き出す…。（そのほかの項目は準備中です） |
+| 詳細 | キーボード（ショートカットの一覧）/ ライセンス（サードパーティのライセンス表記） |
 
 「まだ使えません」と書いた項目は、画面には出ますが、押せません（今のバージョンでは未対応）。
 
 ---
 
-## 12. データの場所とバックアップ
+## 14. データの場所とバックアップ
 
 ### moum player のデータ
 
@@ -95,52 +91,71 @@ rekordbox XML と Traktor NML では、書き出し先のファイルを選び�
 | ファイル | 内容 |
 |---|---|
 | `settings.json` | 設定 |
-| `player.db` | moum player のデータ（編集内容、購入元・購入日・価格、取り込んだ曲、再生位置など） |
-| `tag_write_log.jsonl` | ファイルのタグへ書き込む前の値の記録（Undo tag writes で使います） |
-| `startup_log.jsonl` | 起動時間の記録（直近 30 回分。§14） |
+| `player.db` | moum player のデータ（編集内容、購入元・購入日・価格、取り込んだ曲、再生位置など）。`player.db-wal`、`player.db-shm` が横にできることがあります |
+| `source_icons\` | 購入元のアイコンに選んだ画像のコピー（§4-9。使った場合のみ） |
+| `tag_write_log.jsonl` | ファイルのタグへ書き込む前の値の記録（「タグの書き込みを元に戻す」で使います） |
+| `startup_log.jsonl` | 起動時間の記録（直近 30回分。§16） |
 | `ffmpeg\` | moum player が入れた ffmpeg（入れた場合のみ） |
 
+- **`player.db` は、新しい版で初めて起動したときに、自動で新しい形式に切り替わります。** 前もって何かを操作する必要はありません。
+  切り替えるときに、古い形式のコピーは作りません。**更新の前に、バックアップを取っておいてください**（下記）。
+  切り替えたあとの `player.db` は、古い版の moum player では、表示だけで変更を保存できません。古い版へ戻すときは、バックアップを使います。
 - `player.db` が壊れていたときは、新しいものを作り直して起動します。古いファイルは、別の名前で残します（画面にもお知らせが出ます）。
 - `player.db` が新しい版の moum player で保存されたものだったときは、表示だけで、変更は保存できません。moum player を新しくしてください。
 
 ### 曲のファイル
 
-取り込んだ曲は、Library folder（初期値はミュージックフォルダー内の `moum player`）に入っています。
+取り込んだ曲（CD から取り込んだ曲、変換した曲を含む）は、ライブラリフォルダー（初期値はミュージックフォルダー内の `moum player`）に入っています。
 moum deck のライブラリの曲は、moum deck が読む元のフォルダーにあります。
+
+### 変換のバックアップ
+
+ファイルを変換して「元のファイルをバックアップ」がオンのとき、変換前のファイルは、バックアップフォルダーに入ります。
+初期の場所は、ミュージックフォルダー内の `moum player backup` です（**設定 › ライブラリ › 変換 › バックアップフォルダー** で変えられます）。
+moum player のデータフォルダーの外なので、データのバックアップには含まれません。不要になったら、ご自分で消してください。
 
 ### バックアップの取り方
 
 - **moum player を終了してから**、`%APPDATA%\moum_player\` フォルダーを、フォルダーごとコピーします。
+  新しい版へ更新する前にも、取ってください。
 - 曲のファイルは、別にコピーしておいてください。
-- 曲のファイルとデータをまとめて残したいときは、**Export › moum deck USB** の **Backup**（Library database & settings を含む）が使えます（§10-1）。
+- 曲のファイルとデータをまとめて残したいときは、**ファイル › ライブラリを書き出す…** の「moum deck USB」で、用途を **バックアップ**（ライブラリのデータベースと設定を含む）にする方法が使えます（§12-1）。
 - moum deck のデータ（`%APPDATA%\moum_deck\`）は moum deck 側のデータです。moum deck を終了してから、フォルダーごとコピーしてください。
-- **Export › moum deck on this PC** は、実行のたびに、moum deck のデータベースのバックアップ（zip）を作ります（§10-2）。
+- 「この PC の moum deck」への書き出しは、実行のたびに、moum deck のデータベースのバックアップ（zip）を作ります（§12-2）。
 
 ---
 
-## 13. キーボードショートカット
+## 15. キーボードショートカット
 
-アプリの **Help › Keyboard shortcuts**（F1）と、同じ内容です。
+アプリの **ヘルプ › キーボードショートカット**（F1）と、同じ内容です。
 
 | キー | 動作 |
 |---|---|
 | Space | 再生 / 一時停止 |
-| ← / → | 5 秒戻る / 5 秒進む |
+| ← / → | 5秒戻る / 5秒進む |
 | ↑ / ↓ | 曲の選択 |
 | Enter | 選んだ曲を再生 |
 | Ctrl F | 検索 |
-| Ctrl I | Edit properties（曲の編集） |
-| Ctrl E | Export library（書き出し） |
-| Ctrl , | Settings |
-| Ctrl M | ミニプレイヤー |
-| Ctrl 1〜4 | Songs / Albums / Artists / Playlists |
-| Ctrl Q | 再生キュー（Up next）の表示 |
+| Ctrl I | プロパティを編集 |
+| Ctrl E | ライブラリを書き出す |
+| Ctrl Shift I | CD を取り込む |
+| Ctrl , | 設定 |
+| Ctrl M | ミニプレーヤー |
+| Ctrl 1〜4 | 曲 / アルバム / アーティスト / プレイリスト |
+| Ctrl Q | 再生キュー（「次はこちら」）の表示 |
+| Ctrl B | サイドバーをたたむ / 広げる |
 | Ctrl D | ダークモード |
 | Ctrl + / Ctrl − / Ctrl 0 | 表示サイズの拡大 / 縮小 / 100% |
-| Ctrl → / Ctrl ← | 次の曲 / 前の曲 |
+| Ctrl → / Ctrl ← | 次へ / 前へ |
 | Ctrl S | シャッフル |
 | Ctrl ↑ / Ctrl ↓ | 音量 |
-| F1 | Keyboard shortcuts |
+| F1 | キーボードショートカット |
 | Alt / F10 | メニューバー（Alt + F / E / V / C / H で、各メニュー） |
 
-メニューにだけ出るショートカット：Ctrl O（Add folder…）、Ctrl A（Select all）、Ctrl C（Copy）、Ctrl R（Refresh library）、Del（Remove from library）。
+メニューにだけ出るショートカット：Ctrl O（フォルダーを追加…）、Ctrl A（すべて選択）、Ctrl C（コピー）、Ctrl R（ライブラリを更新）、Del（ライブラリから削除）。
+Ctrl Shift I は、メニューの「CD を取り込む…」に出ます。
+
+
+---
+
+<sub>moum player v1.1.0 の説明です。スクリーンショットに写っている曲は撮影用のサンプルです。</sub>
